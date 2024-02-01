@@ -8,11 +8,11 @@ public delegate void MyDelegate();
 public delegate void MyDelegateParameter(string name);
 
 // Delegates that return a value can be used as a function pointer (a pointer to a method that returns a value)
-public delegate string MyDelegateReturn();
-public delegate string MyDelegateReturnParameter(int id);
 
+public delegate string MyDelegateReturnParameter(int id);
 public class Delegates
 {
+    public delegate string MyDelegateReturn();
     public static void  Run()
     {
         // Assign a method to the delegate and than invoke the delegate
